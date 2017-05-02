@@ -1,0 +1,28 @@
+html{
+  background: linear-gradient(to right , 	#cfff04, #ff9408, #fe0002);
+  /*background-image: url(EWHbfcC.jpg);*/
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+h2{
+  font-size: 35px;
+}
+form{
+  font-size: 25px;
+}
+
+input[type="submit"]{
+  /*background-image: url(abstract-music-background-in-multi-colors-rays-and-spekers_f1YBbFo__S.jpg);*/
+  background-color: #B563d9;
+  background-size: cover;
+  height: 35px;
+  width: 85px;
+  font-weight: bolder;
+  font-style: oblique;
+  border-radius: 5px;
+  border-color: #1B1B1B;
+  position: relative;
+
+}
