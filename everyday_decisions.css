@@ -1,6 +1,5 @@
 html{
-  background: linear-gradient(to right , 	#cfff04, #ff9408, #fe0002);
-  /*background-image: url(EWHbfcC.jpg);*/
+  background: linear-gradient(to right , 	green, yellow, red);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -13,9 +12,8 @@ form{
   font-size: 25px;
 }
 
-input[type="submit"]{
-  /*background-image: url(abstract-music-background-in-multi-colors-rays-and-spekers_f1YBbFo__S.jpg);*/
-  background-color: #B563d9;
+input[type="button"]{
+  background-image: url(cannabis-leaf-outline.jpg);
   background-size: cover;
   height: 35px;
   width: 85px;
@@ -25,4 +23,20 @@ input[type="submit"]{
   border-color: #1B1B1B;
   position: relative;
 
+}
+
+.rappers{
+  display: none;;
+}
+
+.djs{
+  display: none;
+}
+
+.singers{
+  display: none;
+}
+
+.show{
+  display: block;
 }
