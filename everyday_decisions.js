@@ -44,6 +44,78 @@ var kendrickTop5=[
     song: 'i'},
 ];
 
+var martinTop5=[
+  { number: 1,
+    artist: 'Martin Garrix',
+    song: 'In the Name of Love'},
+  { number: 2,
+    artist: 'Martin Garrix',
+    song: 'Animals'},
+  { number: 3,
+    artist: 'Martin Garrix',
+    song: 'Dont Look Down'},
+  { number: 4,
+    artist: 'Martin Garrix',
+    song: 'Scared to be Lonely'},
+  { number: 5,
+    artist: 'Martin Garrix',
+    song: 'Forbidden Voices'},
+];
+
+var chainsmokersTop5=[
+  { number: 1,
+    artist: 'The Chainsmokers',
+    song: 'Closer'},
+  { number: 2,
+    artist: 'The Chainsmokers',
+    song: 'Something Just Like This'},
+  { number: 3,
+    artist: 'The Chainsmokers',
+    song: 'Roses'},
+  { number: 4,
+    artist: 'The Chainsmokers',
+    song: 'Dont Let Me Down'},
+  { number: 5,
+    artist: 'The Chainsmokers',
+    song: 'Paris'},
+];
+
+var chrisTop5=[
+  { number: 1,
+    artist: 'Chris Brown',
+    song: 'Run It'},
+  { number: 2,
+    artist: 'Chris Brown',
+    song: 'Kiss Kiss'},
+  { number: 3,
+    artist: 'Chris Brown',
+    song: 'Forever'},
+  { number: 4,
+    artist: 'Chris Brown',
+    song: 'With You'},
+  { number: 5,
+    artist: 'Chris Brown',
+    song: 'No Air'},
+];
+
+var beyonceTop5=[
+  { number: 1,
+    artist: 'Beyonce',
+    song: 'If I Were a Boy'},
+  { number: 2,
+    artist: 'Beyonce',
+    song: 'Halo'},
+  { number: 3,
+    artist: 'Beyonce',
+    song: 'Single Ladies'},
+  { number: 4,
+    artist: 'Beyonce',
+    song: 'Drunk in Love'},
+  { number: 5,
+    artist: 'Beyonce',
+    song: '7/11'},
+];
+
     musicGenre.addEventListener('change', function(event){
         var selectedGenre = event.target.value;
         // console.log(selectedGenre);
