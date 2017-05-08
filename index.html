@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="everyday_decisions.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <title>Everyday Decisions</title>
-    <!-- <script class="migoTemplate" type="text/handlebars-x">
+    <script class="migoTemplate" type="text/handlebars-x">
         {{#each migosTop5}}
         <tr>
             <td>{{number}}</td>
@@ -13,7 +13,53 @@
             <td>{{song}}</td>
         </tr>
         {{/each}}
-    </script> -->
+    </script>
+    <script class="kendrickTemplate" type="text/handlebars-x">
+        {{#each kendrickTop5}}
+        <tr>
+            <td>{{number}}</td>
+            <td>{{artist}}</td>
+            <td>{{song}}</td>
+        </tr>
+        {{/each}}
+    </script>
+    <script class="martinTemplate" type="text/handlebars-x">
+        {{#each martinTop5}}
+        <tr>
+            <td>{{number}}</td>
+            <td>{{artist}}</td>
+            <td>{{song}}</td>
+        </tr>
+        {{/each}}
+    </script>
+    <script class="chainTemplate" type="text/handlebars-x">
+        {{#each chainsmokersTop5}}
+        <tr>
+            <td>{{number}}</td>
+            <td>{{artist}}</td>
+            <td>{{song}}</td>
+        </tr>
+        {{/each}}
+    </script>
+    <script class="beyonceTemplate" type="text/handlebars-x">
+        {{#each beyonceTop5}}
+        <tr>
+            <td>{{number}}</td>
+            <td>{{artist}}</td>
+            <td>{{song}}</td>
+        </tr>
+        {{/each}}
+    </script>
+    <script class="chrisTemplate" type="text/handlebars-x">
+        {{#each chrisTop5}}
+        <tr>
+            <td>{{number}}</td>
+            <td>{{artist}}</td>
+            <td>{{song}}</td>
+        </tr>
+        {{/each}}
+    </script>
+
   </head>
   <body>
   <div class="heading" align="center">
@@ -36,43 +82,122 @@
     <form class="q2" align="center">
     <input type="radio" id="hip-hop" name="artistH" value="Migos">Migos<br><br>
     <input type="radio" id="hip-hop" name="artistH" value="Kendrick Lamar">Kendrick Lamar<br><br>
-    <input type="button" class="submitButton2" value="Submit">
+    <!-- <input type="button" class="submitButton2" value="Submit"> -->
   </form>
   </section>
 
   <section class="djs" align="center">
     <h2>Which Artist do you prefer?</h2>
-    <form class="q2" align="center">
+    <form class="q2E" align="center">
     <input type="radio" id="edm" name="artistE" value="Martin Garrix">Martin Garrix<br><br>
     <input type="radio" id="edm" name="artistE" value="The Chainsmokers">The Chainsmokers<br><br>
-    <input type="button" class="submitButton2" value="Submit">
   </form>
   </section>
 
   <section class="singers" align="center">
     <h2>Which Artist do you prefer?</h2>
-    <form class="q2" align="center">
+    <form class="q2R" align="center">
       <input type="radio" id="rnb" name="artistR" value="Beyonce">Beyonce<br><br>
     <input type="radio" id="rnb" name="artistR" value="Chris Brown">Chris Brown<br><br>
-    <input type="button" class="submitButton2" value="Submit">
+    <!-- <input type="button" class="submitButton2" value="Submit"> -->
   </form>
   </section>
 
-  <!-- <div class="migos" align="center">
+  <div class="migos" align="center">
       <h1>Migos Top 5:</h1>
       <table>
           <thead>
               <tr>
-                  <th>Number</th>
-                  <th>Artist</th>
-                  <th>Song</th>
+                  <th>Number:</th>
+                  <th>Artist:</th>
+                  <th>Song:</th>
               </tr>
           </thead>
           <tbody class="migo">
 
           </tbody>
       </table>
-  </div> -->
+  </div>
+
+  <div class="kendrickL" align="center">
+      <h1>Kendrick Lamar Top 5:</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Number:</th>
+                  <th>Artist:</th>
+                  <th>Song:</th>
+              </tr>
+          </thead>
+          <tbody class="kendrick">
+
+          </tbody>
+      </table>
+  </div>
+
+  <div class="martinG" align="center">
+      <h1>Martin Garrix Top 5:</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Number:</th>
+                  <th>Artist:</th>
+                  <th>Song:</th>
+              </tr>
+          </thead>
+          <tbody class="martin">
+
+          </tbody>
+      </table>
+  </div>
+
+  <div class="chainsmokers" align="center">
+      <h1>The Chainsmokers Top 5:</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Number:</th>
+                  <th>Artist:</th>
+                  <th>Song:</th>
+              </tr>
+          </thead>
+          <tbody class="chainsmoker">
+
+          </tbody>
+      </table>
+  </div>
+
+  <div class="beyonceK" align="center">
+      <h1>Beyonce's Top 5:</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Number:</th>
+                  <th>Artist:</th>
+                  <th>Song:</th>
+              </tr>
+          </thead>
+          <tbody class="beyonce">
+
+          </tbody>
+      </table>
+  </div>
+
+  <div class="chrisB" align="center">
+      <h1>Chris Brown's Top 5:</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Number:</th>
+                  <th>Artist:</th>
+                  <th>Song:</th>
+              </tr>
+          </thead>
+          <tbody class="chris">
+
+          </tbody>
+      </table>
+  </div>
 
 
   </body>

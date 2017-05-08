@@ -1,12 +1,58 @@
 (function(){
   'use strict';
 
+  function migoTemplate(templateSelector) {
+      var templateText = document.querySelector(templateSelector).innerHTML;
+      return Handlebars.compile(templateText);
+  }
+  function kendrickTemplate(templateSelector) {
+      var templateText = document.querySelector(templateSelector).innerHTML;
+      return Handlebars.compile(templateText);
+  }
+  function martinTemplate(templateSelector) {
+     var templateText = document.querySelector(templateSelector).innerHTML;
+      return Handlebars.compile(templateText);
+  }
+  function chainTemplate(templateSelector) {
+     var templateText = document.querySelector(templateSelector).innerHTML;
+      return Handlebars.compile(templateText);
+  }
+  function chrisTemplate(templateSelector) {
+      var templateText = document.querySelector(templateSelector).innerHTML;
+      return Handlebars.compile(templateText);
+  }
+  function beyonceTemplate(templateSelector) {
+      var templateText = document.querySelector(templateSelector).innerHTML;
+      return Handlebars.compile(templateText);
+  }
+
+var migoTemplate = migoTemplate('.migoTemplate');
+var migoElement = document.querySelector('.migo');
+var kendrickTemplate = kendrickTemplate('.kendrickTemplate');
+var kendrickElement = document.querySelector('.kendrick');
+var martinTemplate = martinTemplate('.martinTemplate');
+var martinElement = document.querySelector('.martin');
+var chainTemplate = chainTemplate('.chainTemplate');
+var chainElement = document.querySelector('.chainsmoker');
+var chrisTemplate = chrisTemplate('.chrisTemplate');
+var chrisElement = document.querySelector('.chris');
+var beyonceTemplate = beyonceTemplate('.beyonceTemplate');
+var beyonceElement = document.querySelector('.beyonce');
+
 var musicGenre = document.querySelector('.favGenreQues');
 var hipHop = document.getElementsByName('hip-hop');
 var rappers = document.querySelector('.rappers');
 var djs = document.querySelector('.djs');
 var singers = document.querySelector('.singers');
-
+var artist = document.querySelector('.q2');
+var artistE = document.querySelector('.q2E');
+var artistR = document.querySelector('.q2R');
+var migos = document.querySelector('.migos');
+var kendrickLamar = document.querySelector('.kendrickL');
+var martinGarrix = document.querySelector('.martinG');
+var theChainsmokers = document.querySelector('.chainsmokers');
+var beyonce = document.querySelector('.beyonceK');
+var chrisBrown = document.querySelector('.chrisB');
 
 var migosTop5=[
   { number: 1,
@@ -118,14 +164,19 @@ var beyonceTop5=[
 
     musicGenre.addEventListener('change', function(event){
         var selectedGenre = event.target.value;
-        // console.log(selectedGenre);
-
+        // alert(selectedGenre);
 
         if (selectedGenre === 'Hip-Hop') {
           djs.classList.remove('show');
           singers.classList.remove('show');
           djs.classList.add('djs');
           singers.classList.add('singers');
+          beyonce.classList.add('beyonceK');
+          kendrickLamar.classList.add('kendrickL');
+          migos.classList.add('migos');
+          theChainsmokers.classList.add('chainsmokers');
+          martinGarrix.classList.add('martinG');
+          chrisBrown.classList.add('chrisB');
           rappers.classList.remove('rappers');
           rappers.classList.add('show');
           return rappers;
@@ -136,20 +187,125 @@ var beyonceTop5=[
           singers.classList.remove('show');
           rappers.classList.add('rappers');
           singers.classList.add('singers');
+          beyonce.classList.add('beyonceK');
+          kendrickLamar.classList.add('kendrickL');
+          migos.classList.add('migos');
+          theChainsmokers.classList.add('chainsmokers');
+          martinGarrix.classList.add('martinG');
+          chrisBrown.classList.add('chrisB');
           djs.classList.remove('djs');
           djs.classList.add('show');
           return djs;
         }
 
         if (selectedGenre === 'RnB') {
+
           rappers.classList.remove('show');
           djs.classList.remove('show');
           rappers.classList.add('rappers');
           djs.classList.add('djs');
+          beyonce.classList.add('beyonceK');
+          kendrickLamar.classList.add('kendrickL');
+          migos.classList.add('migos');
+          theChainsmokers.classList.add('chainsmokers');
+          martinGarrix.classList.add('martinG');
+          chrisBrown.classList.add('chrisB');
           singers.classList.remove('singers');
           singers.classList.add('show');
           return singers;
         }
 
     });
+
+    function showData(data) {
+        migoElement.innerHTML = migoTemplate({
+            migosTop5
+          });
+        kendrickElement.innerHTML = kendrickTemplate({
+          kendrickTop5
+        });
+        martinElement.innerHTML = martinTemplate({
+            martinTop5
+          });
+        chainElement.innerHTML = chainTemplate({
+              chainsmokersTop5
+            });
+        beyonceElement.innerHTML = beyonceTemplate({
+              beyonceTop5
+            });
+        chrisElement.innerHTML = chrisTemplate({
+              chrisTop5
+            });
+    }
+    showData(migosTop5);
+    showData(kendrickTop5);
+    showData(martinTop5);
+    showData(chainsmokersTop5);
+    showData(beyonceTop5);
+    showData(chrisTop5);
+
+    artist.addEventListener('change', function(e){
+        var selectedArtist = e.target.value;
+
+        if (selectedArtist === 'Migos') {
+          kendrickLamar.classList.remove('show');
+          kendrickLamar.classList.add('kendrickL');
+          migos.classList.remove('migos');
+          migos.classList.add('show');
+          return migos;
+        }
+
+        if (selectedArtist === 'Kendrick Lamar') {
+          migos.classList.remove('show');
+          migos.classList.add('migos');
+          kendrickLamar.classList.remove('kendrickL');
+          kendrickLamar.classList.add('show');
+          return kendrickLamar;
+        }
+
+
+    });
+
+  artistE.addEventListener('change', function(i){
+    var selectedArtist = i.target.value;
+
+    if (selectedArtist === 'Martin Garrix') {
+      theChainsmokers.classList.remove('show');
+      theChainsmokers.classList.add('chainsmokers');
+      martinGarrix.classList.remove('martinG');
+      martinGarrix.classList.add('show');
+      return martinGarrix;
+    }
+
+    if (selectedArtist === 'The Chainsmokers') {
+      martinGarrix.classList.remove('show');
+      martinGarrix.classList.add('martinG');
+      theChainsmokers.classList.remove('chainsmokers');
+      theChainsmokers.classList.add('show');
+      return theChainsmokers;
+    }
+
+    });
+
+    artistR.addEventListener('change', function(r){
+      var selectedArtist = r.target.value;
+
+      if (selectedArtist === 'Beyonce') {
+        chrisBrown.classList.remove('show');
+        chrisBrown.classList.add('chrisB');
+        beyonce.classList.remove('beyonceK');
+        beyonce.classList.add('show');
+        return beyonce;
+      }
+
+      if (selectedArtist === 'Chris Brown') {
+        beyonce.classList.remove('show');
+        beyonce.classList.add('beyonceK');
+        chrisBrown.classList.remove('chrisB');
+        chrisBrown.classList.add('show');
+        return chrisBrown;
+      }
+
+      });
+
 })();
