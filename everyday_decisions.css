@@ -45,9 +45,9 @@ input[type="button"]{
 table {
     width : 60%;
     border: 1px solid black;
-    background: url(tumblr_oaeg4doWvw1rbf5azo2_r1_500.png);
+    /*background: url(tumblr_oaeg4doWvw1rbf5azo2_r1_500.png);
     background-size: cover;
-    background-repeat: round;
+    background-repeat: round;*/
 }
 
 table, th, td {
